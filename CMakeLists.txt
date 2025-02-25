@@ -41,7 +41,7 @@ pico_set_program_name(projeto_final2 "projeto_final2")
 pico_set_program_version(projeto_final2 "0.1")
 
 # Generate PIO header
-pico_generate_pio_header(projeto_final2 ${CMAKE_CURRENT_LIST_DIR}/blink.pio)
+pico_generate_pio_header(projeto_final2 ${CMAKE_CURRENT_LIST_DIR}/ws2818b.pio)
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(projeto_final2 1)
@@ -65,7 +65,6 @@ target_link_libraries(projeto_final2
         hardware_clocks
         hardware_gpio
         hardware_adc
-        
         )
 
 pico_add_extra_outputs(projeto_final2)
